@@ -1,0 +1,17 @@
+# 构建产物与临时文件
+build/*.zip
+build/*.apk
+build/*.idsig
+build/check.js
+build/gen/
+build/dex/
+*.jks
+*.keystore
+# 本地同步脚本（含本机绝对路径，只在本地使用）
+sync-and-push.ps1
+推送更新.bat
+# 系统
+.DS_Store
+Thumbs.db
+Thumbs.db*
+desktop.ini
