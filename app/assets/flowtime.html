@@ -9,7 +9,8 @@
 <style>
 * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
 :root { --accent:#4a86f0; --accent-soft:#eaf2ff; --accent-deep:#2f6bf0; --accent-lite:#7fb0ff; --accent-ink:#1e3c66; --accent-muted:#8fa0b5; --accent-track:rgba(74,134,240,.18); --accent-mid:#c7dbff; --accent-faint:#e3eeff; --accent-wash:rgba(74,134,240,.10); --accent-line:rgba(74,134,240,.30); --accent-glow:rgba(74,134,240,.55); --accent-glow-soft:rgba(74,134,240,.14); --progress-grad:linear-gradient(135deg,#eff5ff 0%,#e4eeff 55%,#edf5ff 100%); --stats-grad:linear-gradient(165deg,#f2f8ff 0%,#ffffff 62%); --heat1:#e8f1ff; --heat2:#a8c9ff; --heat3:#2f6bf0; --heat-ink:#2b4670; --heat3-ink:#ffffff; --neutral:#555555; --neutral-soft:#f0f3f9; --bg:#f4f6fb; --card:#ffffff; --wash:#f3f5fa; --line:#e9edf4; --app:rgba(255,255,255,0.92); --surface:#fff; --text:#1b2030; --text-sub:#707a8c; --text-faint:#a6adbb; }
-html, body { height:100%; overflow:hidden; }
+html, body { height:100%; overflow:hidden; -webkit-user-select:none; user-select:none; -webkit-touch-callout:none; }
+input, textarea, [contenteditable="true"] { -webkit-user-select:text; user-select:text; -webkit-touch-callout:default; }
 body { font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei','Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--text); padding-top:max(env(safe-area-inset-top, 0px), 4px); }
 body.has-bg { background-size:cover; background-position:center; background-attachment:fixed; }
 .app { max-width:420px; margin:0 auto; height:100%; min-height:0; display:flex; flex-direction:column; background:var(--app); position:relative; }

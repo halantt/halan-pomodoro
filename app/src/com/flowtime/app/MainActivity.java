@@ -82,6 +82,15 @@ public class MainActivity extends Activity {
                 return true;
             }
         });
+        // 关掉系统的长按行为（文本选择 / 图片另存菜单）；App 内的长按由 JS 自己实现，不受影响
+        webView.setLongClickable(false);
+        webView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                return true;
+            }
+        });
+
         webView.loadUrl("file:///android_asset/flowtime.html");
         setContentView(webView);
 
